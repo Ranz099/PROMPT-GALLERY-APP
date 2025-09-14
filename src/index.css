@@ -8,6 +8,7 @@
   --accent2: #06b6d4;
   --ok: #16a34a;
   --warn: #f59e0b;
+  --background: 0 0% 5%;
   --shadow: 0 8px 24px rgba(0, 0, 0, .35), 0 1px 0 rgba(255, 255, 255, .03) inset;
 
   /* font tuning */
@@ -17,6 +18,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   --header-h: 64px;      /* header height */
+  --sidebar-w: 260px;    /* sidebar width */
 }
 
 * {
@@ -26,14 +29,15 @@
 html,
 body,
 #root {
-  
+  height: 100%;
 }
 
 body {
   margin: 0;
   color: var(--text);
-background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);  min-width: 320px;
   min-height: 100vh;
+  background: black;
+  overflow: hidden; 
 }
 
 /* LINKS (optional) */
@@ -47,16 +51,6 @@ a:hover {
 }
 
 /* LAYOUT */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-  
-}
 
 .h1 {
   font-size: 32px;
@@ -83,35 +77,6 @@ a:hover {
   gap: 10px;
 }
 
-/* HEADER */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  margin-bottom: 22px;
-  padding: 18px 20px;
-  border-radius: 16px;
-  position: relative;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  
-}
-.brand { 
-  display: flex; 
-  align-items: center; 
-}
-.brand-logo {
-  width:80px; 
-  height: 80px; 
-  display: block;
-  object-fit: contain;
-  border-radius: 12px;
-  transition: transform .15s ease, box-shadow .2s ease;
-}
-.brand-logo:hover { 
-  transform: translateY(-1px) scale(1.03); 
- }
 
 
 /* TOOLBAR */
@@ -178,22 +143,13 @@ a:hover {
 }
 
 /* SECTION HERO */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 16px 18px;
-  color: black;
-  border-radius: 16px;
-  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-}
 
 .hero-title {
-  font-weight: 600;
-  font-size: 18px;
   margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, .6);
 }
 
 .chip-row {
@@ -359,7 +315,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 18px;
-  z-index: 1;
+  z-index: 5;
   overflow: scroll;
 
 }

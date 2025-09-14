@@ -1,5 +1,5 @@
-import PromptGallery from './PromptGallery.png';
+export {default as 
 
-export default {
-  PromptGallery
-};
+  PromptGalleryLogo
+  
+ } from './PromptGallery.png';

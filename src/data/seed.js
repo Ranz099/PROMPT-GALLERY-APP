@@ -8,7 +8,7 @@ export const seedPrompts = [
         project: 'Summer Campaign',
         brandMemory: 'Palette: #FFB703 (sunny orange), #FB8500 (warm), #023047 (deep teal). Mood: sun‑kissed, crisp, editorial. Style: Mediterranean, half‑body, clean lines.',
         model: 'SDXL (Model+BG Swap)',
-        fullText: '(((European male model))), relaxed confident stance, editorial apparel look; background: elegant Mediterranean terrace with beige stone balustrades; soft diffused daylight; half‑body framing; shallow depth of field; crisp focus; HD quality; styling: white sneakers; — ensure hands never occlude the garment; photorealistic, ultra‑detailed.',
+        fullText: '(((European male model))), relaxed confident stance, editorial apparel look; background: elegant Mediterranean terrace with beige stone balustrades; soft diffused daylight; half‑body framing; shallow depth of field; crisp focus; HD quality; styling: white sneakers; — ensure hands never occlude the garment; photorealistic, ultra‑detailed.(((European male model))), relaxed confident stance, editorial apparel look; background: elegant Mediterranean terrace with beige stone balustrades; soft diffused daylight; half‑body framing; shallow depth of field; crisp focus; HD quality; styling: white sneakers; — ensure hands never occlude the garment; photorealistic, ultra‑detailed.(((European male model))), relaxed confident stance, editorial apparel look; background: elegant Mediterranean terrace with beige stone balustrades; soft diffused daylight; half‑body framing; shallow depth of field; crisp focus; HD quality; styling: white sneakers; — ensure hands never occlude the garment; photorealistic, ultra‑detailed.',
         images: [
             { url: 'https://fastly.picsum.photos/id/237/200/300.jpg?hmac=TmmQSbShHz9CdQm0NkEjx1Dyh_Y984R9LpNrpvH2D_U', alt: 'Terrace 1' },
             { url: 'https://images.unsplash.com/photo-1516822003754-cca485356ecb', alt: 'Terrace 2' },
@@ -99,6 +99,20 @@ export const seedPrompts = [
             { url: 'https://images.unsplash.com/photo-1517705008128-361805f42e86', alt: 'Candid 3' }
         ],
         tags: ['Lifestyle', 'Candid', 'Product', 'Golden Hour'],
+        createdAt: new Date().toISOString()
+    },
+    {
+        id: 'saas-image-product-hero-1',
+        name: 'SaaS • Image Prompt • Clean Product‑on‑White',
+        category: 'saas',
+        toolGroup: 'Image',
+        model: 'GPT‑4o + Vision',
+        fullText: 'Generate a product‑on‑white hero: clean white sweep background, soft shadow under base, 3/4 angle, crisp reflections, 3000×3000 output, color‑true. Include 3 alt crops (square, 4:5, 16:9).',
+        images: [
+            { url: 'https://images.unsplash.com/photo-1516822003754-cca485356ecb', alt: 'Prod 1' },
+            { url: 'https://images.unsplash.com/photo-1503602642458-232111445657', alt: 'Prod 2' }
+        ],
+        tags: ['SaaS', 'Catalog', 'Hero', 'E‑commerce'],
         createdAt: new Date().toISOString()
     },
     {
